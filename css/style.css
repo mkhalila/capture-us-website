@@ -1,1 +1,7 @@
-/*Placeholder*/
+body {
+	text-align: center;
+}
+
+.navbar-brand {
+	padding-left: 20px;
+}
