@@ -5,3 +5,8 @@ body {
 .navbar-brand {
 	padding-left: 20px;
 }
+
+.nav-item {
+	padding-left: 1em;
+	padding-right: 1em;
+}
