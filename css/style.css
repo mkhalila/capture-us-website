@@ -13,6 +13,7 @@ body {
 
 .nav-link {
 	color: white !important;
+	font-size: 1.2em;
 }
 
 .active .nav-link {
