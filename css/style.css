@@ -11,6 +11,14 @@ body {
 	padding-right: 1em;
 }
 
+.nav-link {
+	color: white !important;
+}
+
+.active .nav-link {
+	color:  rgba(223, 181, 43, 0.8) !important;
+}
+
 nav {
 	border-bottom: 1px outset rgba(223, 181, 43, 0.6);
 }
