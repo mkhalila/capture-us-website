@@ -40,10 +40,13 @@ nav {
     color: rgba(223, 181, 43, 1);
 }
 
+#faq-jumbotron {
+	margin-bottom: 60px;
+}
+
 .card {
   padding: 1rem 1rem 1.5rem 1.5rem;
-  box-shadow: 0 1px 2px #aaa;
-  background: white;
+  box-shadow: 0 1px 2px rgba(223, 181, 43, 0.5);
   margin: 0 0.5rem 0.5rem;
   border-radius: 3px;
   user-select: none;
@@ -51,6 +54,7 @@ nav {
   transform-origin: top left;
   height: 90%;
   overflow: auto;
+  color: white;
 }
 
 .card::-webkit-scrollbar { 
@@ -61,6 +65,10 @@ nav {
   animation-name: fly-in-from-right;
   animation-delay: 1.1s;
  	transform-origin: top right;
+}
+
+.faq-question {
+	color: rgba(223, 181, 43, 0.7);
 }
 
 @keyframes fly-in-from-left {
