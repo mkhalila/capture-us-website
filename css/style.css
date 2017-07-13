@@ -45,10 +45,12 @@ nav {
   box-shadow: 0 1px 2px #aaa;
   background: white;
   margin: 0 1rem 1rem;
-  border-radius: 3px;
+  border-radius: 5px;
   user-select: none;
   animation: fly-in-from-left .5s 1s ease both;
   transform-origin: top left;
+  height: 90%;
+  overflow: auto;
 }
 
 .card:nth-child(even){
