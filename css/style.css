@@ -43,11 +43,14 @@ nav {
     color: rgba(223, 181, 43, 1);
 }
 
+.jumbotron-heading {
+	padding-bottom: 15px;
+}
+
 #faq-jumbotron {
 	margin-bottom: 60px;
 	color: white;
 	background-image: url(../img/green-curtain-bg.jpg);
-	padding-bottom: 110px;
 }
 
 .card {
