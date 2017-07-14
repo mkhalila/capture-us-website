@@ -59,12 +59,7 @@ nav {
   animation: fly-in-from-left .5s 1s ease both;
   transform-origin: top left;
   height: 90%;
-  overflow: auto;
   color: white;
-}
-
-.card::-webkit-scrollbar { 
-    display: none; 
 }
 
 .card:nth-child(even){
