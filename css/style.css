@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 body {
 	text-align: center;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .nav-item {
