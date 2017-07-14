@@ -18,7 +18,7 @@ body {
 
 nav {
 	border-bottom: 1px outset rgba(223, 181, 43, 0.6);
-	background-image: url("../img/green-curtain-bg.jpg");
+	/*background-image: url("../img/green-curtain-bg.jpg");*/
 }
 
 .toggler-gold .navbar-toggler-icon {
@@ -42,6 +42,9 @@ nav {
 
 #faq-jumbotron {
 	margin-bottom: 60px;
+	color: white;
+	background-image: url(../img/green-curtain-bg.jpg);
+	padding-bottom: 110px;
 }
 
 .card {
