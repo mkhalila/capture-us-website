@@ -76,6 +76,10 @@ nav {
 	padding-bottom: 0.5em;
 }
 
+.form-control {
+	/*background-color: rgba(223, 181, 43, 0.6) !important;*/
+}
+
 @keyframes fly-in-from-left {
   from {
     transform: translateY(15rem) rotate(15deg);
