@@ -76,22 +76,6 @@ nav {
 	padding-bottom: 0.5em;
 }
 
-.contact-social-icon {
-	padding-left: 1em;
-	padding-right: 1em;
-	font-size: 2em;
-	color: rgba(223, 181, 43, 0.7);
-}
-
-.contact-social-icon:visited {
-    color: rgba(223, 181, 43, 0.7);
-}
-
-.contact-social-icon:hover {
-    text-decoration: none !important;
-}
-
-
 @keyframes fly-in-from-left {
   from {
     transform: translateY(15rem) rotate(15deg);
