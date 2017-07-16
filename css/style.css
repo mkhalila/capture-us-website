@@ -21,7 +21,6 @@ body {
 
 nav {
 	border-bottom: 1px outset rgba(223, 181, 43, 0.6);
-	/*background-image: url("../img/green-curtain-bg.jpg");*/
 }
 
 .toggler-gold .navbar-toggler-icon {
@@ -91,8 +90,8 @@ input[type="tel"]:focus {
 }
 
 #general-submit {
-	background-color: rgba(223, 181, 43, 0.8);
-	/*color: black;*/
+	color: rgba(223, 181, 43, 0.7);
+	border-color: rgba(223, 181, 43, 0.7);
 }
 
 @keyframes fly-in-from-left {
