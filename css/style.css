@@ -77,8 +77,29 @@ nav {
 }
 
 .form-control {
-	/*background-color: rgba(223, 181, 43, 0.6) !important;*/
+	color: rgba(255, 255, 255, 0.8) !important;
+	border-color: rgba(223, 181, 43, 0.4);
 }
+
+#general-message:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+	border-color: rgba(223, 181, 43, 0.7);
+  box-shadow: 0 1px 2px rgba(223, 181, 43, 0.5);
+  outline: 0 none;
+}
+
+#general-submit {
+	background-color: rgba(223, 181, 43, 0.8);
+	/*color: black;*/
+}
+
+.form-control::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.8) }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: rgba(223, 181, 43, 0.8) }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: rgba(223, 181, 43, 0.8) }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: rgba(223, 181, 43, 0.8) }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: rgba(223, 181, 43, 0.8) }  /* Microsoft Edge */
 
 @keyframes fly-in-from-left {
   from {
