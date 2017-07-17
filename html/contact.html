@@ -105,7 +105,16 @@
               <input type="tel" id="quote-phone" class="form-control bg-inverse" pattern="\d{11}" name="quote-phone" placeholder="Contact Number" required> 
             </div>
             <div class="form-group">
-              <input type="text" id="quote-event-type" class="form-control bg-inverse" name="quote-event-type" placeholder="Event Type">
+              <select class="form-control bg-inverse" id="quote-event-type">
+                <option disabled selected>Event Type</option>
+                <option>Wedding</option>
+                <option>Birthday Party</option>
+                <option>Summer</option>
+                <option>Christmas</option>
+                <option>Halloween</option>
+                <option>Masquerade</option>
+                <option>Other (Provide additional details)</option>
+              </select>
             </div>
             <div class="form-group">
               <input type="text" id="quote-venue-address" class="form-control bg-inverse" name="quote-venue-address" placeholder="Venue Address">

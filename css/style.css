@@ -83,6 +83,7 @@ nav {
 #general-message:focus,
 #quote-additional:focus,
 #quote-hours:focus,
+#quote-event-type:focus,
 textarea:focus,
 input[type="date"]:focus,
 input[type="time"]:focus,
