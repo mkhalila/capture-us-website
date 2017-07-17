@@ -96,7 +96,7 @@ input[type="tel"]:focus {
   outline: 0 none;
 }
 
-#general-submit {
+.contact-submit {
 	color: rgba(223, 181, 43, 0.7);
 	border-color: rgba(223, 181, 43, 0.7);
 }
