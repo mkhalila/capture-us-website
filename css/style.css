@@ -115,6 +115,11 @@ input[type="tel"]:focus {
 	margin-bottom: 100px;
 }
 
+.top-bot-padding {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 .form-control::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.7); }  /* WebKit, Blink, Edge */
 .form-control:-moz-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Mozilla Firefox 4 to 18 */
 .form-control::-moz-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Mozilla Firefox 19+ */
