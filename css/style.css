@@ -101,6 +101,10 @@ input[type="tel"]:focus {
 	border-color: rgba(223, 181, 43, 0.7);
 }
 
+.contact-card {
+	margin-bottom: 100px;
+}
+
 @keyframes fly-in-from-left {
   from {
     transform: translateY(15rem) rotate(15deg);

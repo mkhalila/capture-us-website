@@ -66,86 +66,95 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="card bg-inverse">
-      <h1 class="faq-question">General Enquiry</h1>
-      <form>
-        <div class="form-group">
-          <input type="text" id="general-name" class="form-control bg-inverse" name="general-name" placeholder="Name" required>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <div class="card contact-card bg-inverse">
+          <h1 class="faq-question">General Enquiry</h1>
+          <form>
+            <div class="form-group">
+              <input type="text" id="general-name" class="form-control bg-inverse" name="general-name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="general-email" class="form-control bg-inverse" name="general-email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="general-phone" class="form-control bg-inverse" pattern="\d{11}" name="general-phone" placeholder="Contact Number" required> 
+            </div>
+            <div class="form-group">
+              <input type="text" id="general-subject" class="form-control bg-inverse" name="general-subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea type="text" id="general-message" class="form-control bg-inverse" name="general-message" rows="18" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn bg-inverse contact-submit">Submit</button>
+          </form>
         </div>
-        <div class="form-group">
-          <input type="email" id="general-email" class="form-control bg-inverse" name="general-email" placeholder="Email" required>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <div class="card contact-card bg-inverse">
+          <h1 class="faq-question">Get a Quote</h1>
+          <form>
+            <div class="form-group">
+              <input type="text" id="quote-name" class="form-control bg-inverse" name="quote-name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="quote-email" class="form-control bg-inverse" name="quote-email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="quote-phone" class="form-control bg-inverse" pattern="\d{11}" name="quote-phone" placeholder="Contact Number" required> 
+            </div>
+            <div class="form-group">
+              <input type="text" id="quote-event-type" class="form-control bg-inverse" name="quote-event-type" placeholder="Event Type">
+            </div>
+            <div class="form-group">
+              <input type="text" id="quote-venue-address" class="form-control bg-inverse" name="quote-venue-address" placeholder="Venue Address">
+            </div>
+            <div class="form-group">
+              <input type="date" id="quote-event-date" class="form-control bg-inverse" name="quote-event-date" placeholder="Event Date">
+            </div>
+            <div class="form-group">
+              <select class="form-control bg-inverse" id="quote-hours">
+                <option disabled selected>Hours for Hire</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="time" id="quote-start-time" class="form-control bg-inverse" name="quote-start-time" placeholder="Start Time">
+            </div>
+            <div class="form-group">
+              <textarea type="text" id="quote-additional" class="form-control bg-inverse" name="quote-additional" rows="7" placeholder="Additional Details"></textarea>
+            </div>
+            <button type="submit" class="btn bg-inverse contact-submit">Submit</button>
+          </form>
         </div>
-        <div class="form-group">
-          <input type="tel" id="general-phone" class="form-control bg-inverse" pattern="\d{11}" name="general-phone" placeholder="Contact Number" required> 
-        </div>
-        <div class="form-group">
-          <input type="text" id="general-subject" class="form-control bg-inverse" name="general-subject" placeholder="Subject">
-        </div>
-        <div class="form-group">
-          <textarea type="text" id="general-message" class="form-control bg-inverse" name="general-message" rows="7" placeholder="Message" required></textarea>
-        </div>
-        <button type="submit" class="btn bg-inverse contact-submit">Submit</button>
-      </form>
+      </div>
     </div>
   </div>
+    
+    
 
   <div class="container">
-    <div class="card bg-inverse">
-      <h1 class="faq-question">Get a Quote</h1>
-      <form>
-        <div class="form-group">
-          <input type="text" id="quote-name" class="form-control bg-inverse" name="quote-name" placeholder="Name" required>
-        </div>
-        <div class="form-group">
-          <input type="email" id="quote-email" class="form-control bg-inverse" name="quote-email" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <input type="tel" id="quote-phone" class="form-control bg-inverse" pattern="\d{11}" name="quote-phone" placeholder="Contact Number" required> 
-        </div>
-        <div class="form-group">
-          <input type="text" id="quote-event-type" class="form-control bg-inverse" name="quote-event-type" placeholder="Event Type">
-        </div>
-        <div class="form-group">
-          <input type="text" id="quote-venue-address" class="form-control bg-inverse" name="quote-venue-address" placeholder="Venue Address">
-        </div>
-        <div class="form-group">
-          <input type="date" id="quote-event-date" class="form-control bg-inverse" name="quote-event-date" placeholder="Event Date">
-        </div>
-        <div class="form-group">
-          <select class="form-control bg-inverse" id="quote-hours">
-            <option disabled selected>Hours for Hire</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <input type="time" id="quote-start-time" class="form-control bg-inverse" name="quote-start-time" placeholder="Start Time">
-        </div>
-        <div class="form-group">
-          <textarea type="text" id="quote-additional" class="form-control bg-inverse" name="quote-additional" rows="7" placeholder="Additional Details"></textarea>
-        </div>
-        <button type="submit" class="btn bg-inverse contact-submit">Submit</button>
-      </form>
-    </div>
+    
   </div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
