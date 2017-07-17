@@ -105,6 +105,12 @@ input[type="tel"]:focus {
 	margin-bottom: 100px;
 }
 
+.form-control::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.7); }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Microsoft Edge */
+
 @keyframes fly-in-from-left {
   from {
     transform: translateY(15rem) rotate(15deg);
