@@ -77,6 +77,10 @@ nav {
 	padding-bottom: 0.5em;
 }
 
+.gold-bright {
+	color: rgba(223, 181, 43, 1);
+}
+
 .form-control {
 	color: rgba(255, 255, 255, 0.8) !important;
 	border-color: rgba(223, 181, 43, 0.4);
