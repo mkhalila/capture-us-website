@@ -126,6 +126,10 @@ input[type="tel"]:focus {
 .form-control:-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Internet Explorer 10-11 */
 .form-control::-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Microsoft Edge */
 
+.event-theme {
+	margi-left: 100px;
+}
+
 @keyframes fly-in-from-left {
   from {
     transform: translateY(15rem) rotate(15deg);
