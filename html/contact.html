@@ -71,6 +71,9 @@
       <div class="col-lg-6 col-sm-12">
         <div class="card contact-card">
           <h1 class="faq-question">General Enquiry</h1>
+          <div style="display: none;" id="thankyou_message">
+            <p class="faq-question">Sent!</p>
+          </div>
           <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwJRwgttqpadGE4yqfz3u1o05mLGEmfJ1tij8q3FS4c5zL2xGE/exec">
             <div class="form-group">
               <input type="text" id="general-name" class="form-control" name="name" placeholder="Name" required>
@@ -79,8 +82,7 @@
               <input type="email" id="general-email" class="form-control" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-              <input type="text" pattern="\d{11}" id="general-phone" class="form-control" pattern="\d{11}" name="phone" placeholder="Contact Number" required title="11 Digit Contact number">
-              <!-- <input type="tel" id="general-phone" class="form-control" pattern="(0|\+44)\d{10}" name="phone" placeholder="Contact Number" required title="0xxxxxxxxxx or +44xxxxxxxxxx">  -->
+              <input type="tel" id="general-phone" class="form-control" pattern="(0|\+44)\d{10}" name="phone" placeholder="Contact Number" required title="0xxxxxxxxxx or +44xxxxxxxxxx"> 
             </div>
             <div class="form-group">
               <input type="text" id="general-subject" class="form-control" name="subject" placeholder="Subject">
@@ -88,7 +90,7 @@
             <div class="form-group">
               <textarea type="text" id="general-message" class="form-control" name="message" rows="18" placeholder="Message" required></textarea>
             </div>
-            <button type="submit" class="btn contact-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+            <button id="contact-general-send" type="submit" class="btn contact-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
           </form>
         </div>
       </div>
@@ -147,12 +149,15 @@
     </div>
   </div>
 
+
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- jQuery (necessary for Bootstrap's Tooltips) -->
+  <!-- Tether (necessary for Bootstrap's Tooltips) -->
   <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="../js/bootstrap.min.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
   <script src="../js/scripts.js"></script>
 </body>
 </html>
