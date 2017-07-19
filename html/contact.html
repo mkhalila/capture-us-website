@@ -71,21 +71,22 @@
       <div class="col-lg-6 col-sm-12">
         <div class="card contact-card">
           <h1 class="faq-question">General Enquiry</h1>
-          <form>
+          <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwJRwgttqpadGE4yqfz3u1o05mLGEmfJ1tij8q3FS4c5zL2xGE/exec">
             <div class="form-group">
-              <input type="text" id="general-name" class="form-control" name="general-name" placeholder="Name" required>
+              <input type="text" id="general-name" class="form-control" name="name" placeholder="Name" required>
             </div>
             <div class="form-group">
-              <input type="email" id="general-email" class="form-control" name="general-email" placeholder="Email" required>
+              <input type="email" id="general-email" class="form-control" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-              <input type="tel" id="general-phone" class="form-control" pattern="\d{11}" name="general-phone" placeholder="Contact Number" required> 
+              <input type="text" pattern="\d{11}" id="general-phone" class="form-control" pattern="\d{11}" name="phone" placeholder="Contact Number" required title="11 Digit Contact number">
+              <!-- <input type="tel" id="general-phone" class="form-control" pattern="(0|\+44)\d{10}" name="phone" placeholder="Contact Number" required title="0xxxxxxxxxx or +44xxxxxxxxxx">  -->
             </div>
             <div class="form-group">
-              <input type="text" id="general-subject" class="form-control" name="general-subject" placeholder="Subject">
+              <input type="text" id="general-subject" class="form-control" name="subject" placeholder="Subject">
             </div>
             <div class="form-group">
-              <textarea type="text" id="general-message" class="form-control" name="general-message" rows="18" placeholder="Message" required></textarea>
+              <textarea type="text" id="general-message" class="form-control" name="message" rows="18" placeholder="Message" required></textarea>
             </div>
             <button type="submit" class="btn contact-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
           </form>
