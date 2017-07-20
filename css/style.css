@@ -137,6 +137,24 @@ input[type="tel"]:focus {
 	box-shadow: 0 0 0;
 }
 
+// Disable iOS overriding styling of inputs:
+input.text,
+textarea,
+input[type="date"],
+input[type="time"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+	-webkit-appearance: none;
+	/*border-radius: 0;*/
+}
+
 @keyframes fly-in-from-left {
   from {
     transform: translateY(15rem) rotate(15deg);
