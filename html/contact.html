@@ -71,7 +71,7 @@
       <div class="col-lg-6 col-sm-12">
         <div class="card contact-card">
           <h1 class="faq-question">General Enquiry</h1>
-          <div id="thankyou_message" class="card">
+          <div id="thankyou_message" class="card contact-success">
             <p class="gold-bright">Success. Your enquiry has been sent to us and we will get back to you as soon as we can.</p>
           </div>
           <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwJRwgttqpadGE4yqfz3u1o05mLGEmfJ1tij8q3FS4c5zL2xGE/exec">
@@ -97,18 +97,21 @@
       <div class="col-lg-6 col-sm-12">
         <div class="card contact-card">
           <h1 class="faq-question">Get a Quote</h1>
-          <form>
+          <div id="success_quote_enquiry" class="card contact-success">
+            <p class="gold-bright">Success. Your enquiry has been sent to us and we will get back to you as soon as we can.</p>
+          </div>
+          <form id="quote-enquiry" method="POST" action="https://script.google.com/macros/s/AKfycby8r1lAbNKgaPXX3aBdNNuadf6QSzL0BVh6ioWud-fDP2Cap3HM/exec">
             <div class="form-group">
-              <input type="text" id="quote-name" class="form-control" name="quote-name" placeholder="Name" required>
+              <input type="text" id="quote-name" class="form-control" name="name" placeholder="Name" required>
             </div>
             <div class="form-group">
-              <input type="email" id="quote-email" class="form-control" name="quote-email" placeholder="Email" required>
+              <input type="email" id="quote-email" class="form-control" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-              <input type="tel" id="quote-phone" class="form-control" pattern="\d{11}" name="quote-phone" placeholder="Contact Number" required> 
+              <input type="tel" id="quote-phone" class="form-control" pattern="(0|\+44)\d{10}" name="phone" placeholder="Contact Number" required title="0xxxxxxxxxx or +44xxxxxxxxxx"> 
             </div>
             <div class="form-group">
-              <select class="form-control" id="quote-event-type">
+              <select class="form-control" id="quote-event-type" name="event-type">
                 <option disabled selected>Event Type</option>
                 <option>Wedding</option>
                 <option>Birthday Party</option>
@@ -120,13 +123,13 @@
               </select>
             </div>
             <div class="form-group">
-              <input type="text" id="quote-venue-address" class="form-control" name="quote-venue-address" placeholder="Venue Address">
+              <input type="text" id="quote-venue-address" class="form-control" name="event-venue" placeholder="Venue Address">
             </div>
             <div class="form-group">
-              <input type="date" id="quote-event-date" class="form-control" name="quote-event-date" placeholder="Event Date">
+              <input type="date" id="quote-event-date" class="form-control" name="event-date" placeholder="Event Date">
             </div>
             <div class="form-group">
-              <select class="form-control" id="quote-hours">
+              <select class="form-control" id="quote-hours" name="hours">
                 <option disabled selected>Hours for Hire</option>
                 <option>2</option>
                 <option>3</option>
@@ -136,10 +139,10 @@
               </select>
             </div>
             <div class="form-group">
-              <input type="time" id="quote-start-time" class="form-control" name="quote-start-time" placeholder="Start Time">
+              <input type="time" id="quote-start-time" class="form-control" name="start-time" placeholder="Start Time">
             </div>
             <div class="form-group">
-              <textarea type="text" id="quote-additional" class="form-control" name="quote-additional" rows="7" placeholder="Additional Details"></textarea>
+              <textarea type="text" id="quote-additional" class="form-control" name="additional" rows="7" placeholder="Additional Details"></textarea>
             </div>
             <button type="submit" class="btn contact-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
           </form>

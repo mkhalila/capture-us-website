@@ -132,7 +132,7 @@ input[type="tel"]:focus {
 .form-control:-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Internet Explorer 10-11 */
 .form-control::-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Microsoft Edge */
 
-#thankyou_message {
+.contact-success {
 	display: none;
 	box-shadow: 0 0 0;
 }
