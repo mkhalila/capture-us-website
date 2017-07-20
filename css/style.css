@@ -117,7 +117,6 @@ input[type="tel"]:focus {
 	background-color: rgba(223, 181, 43, 0.7);
 }
 
-
 .contact-card {
 	margin-bottom: 100px;
 }
@@ -132,6 +131,11 @@ input[type="tel"]:focus {
 .form-control::-moz-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Mozilla Firefox 19+ */
 .form-control:-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Internet Explorer 10-11 */
 .form-control::-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }  /* Microsoft Edge */
+
+#thankyou_message {
+	display: none;
+	box-shadow: 0 0 0;
+}
 
 @keyframes fly-in-from-left {
   from {
