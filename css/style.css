@@ -134,6 +134,7 @@ input[type="tel"]:focus,
 
 // Disable iOS overriding styling of inputs:
 input.text,
+select,
 textarea,
 input[type="date"],
 input[type="time"],
@@ -148,6 +149,10 @@ input[type="submit"],
 .input-checkbox {
 	-webkit-appearance: none;
 	/*border-radius: 0;*/
+}
+
+#gallery {
+	display: none;
 }
 
 @keyframes fly-in-from-left {
