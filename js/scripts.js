@@ -2,8 +2,9 @@
 jQuery(document).ready(function(){ 
 	// jQuery("#gallery").unitegallery({
 	// 	tiles_type:"nested"
+	$("#gallery").photoSwipe();
 	// });
-	$('#gallery').photoSwipe();
+	// $('#quote-event-date').pickadate()
 }); 
 
 // The original version of the following script can be found at: 
