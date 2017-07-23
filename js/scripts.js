@@ -1,12 +1,3 @@
-// Unite Gallery
-jQuery(document).ready(function(){ 
-	// jQuery("#gallery").unitegallery({
-	// 	tiles_type:"nested"
-	$("#gallery").photoSwipe();
-	// });
-	// $('#quote-event-date').pickadate()
-}); 
-
 // The original version of the following script can be found at: 
 // https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js
 // Due to both the contact us forms requiring the same functionality - but using a single ID (originally 'gform'), 

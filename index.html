@@ -19,6 +19,8 @@
   <!-- Font Awesome CDN -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Cookie Consent -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 </head>
 <body>
   <nav id="topNav" class="navbar navbar-toggleable-md navbar-inverse">
@@ -70,6 +72,29 @@
   <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+  <!-- Cookie Consent -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script type="text/javascript">
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#000",
+            "text": "#9c7f1e"
+          },
+          "button": {
+            "background": "#9c7f1e",
+            "text": "#050505"
+          }
+        },
+        "position": "bottom-left",
+        "theme": "classic",
+        "content": {
+          "dismiss": "Agree"
+        }
+      })
+    });
+  </script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
