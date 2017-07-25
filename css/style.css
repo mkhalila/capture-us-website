@@ -184,6 +184,45 @@ input[type="submit"],
   padding: 1px;
 }
 
+blockquote {
+  display:block;
+  background: black;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  opacity: 80%;
+  
+  /*Font*/
+  font-size: 16px;
+  line-height: 1.2;
+  color: white;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #9C7F1E;
+  border-right: 2px solid #9C7F1E;
+}
+
+blockquote::before {
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #9C7F1E;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after {
+  /*Reset to make sure*/
+  content: "";
+}
+
 @media (max-width: 1200px) {
   #photos {
   -moz-column-count:    4;
