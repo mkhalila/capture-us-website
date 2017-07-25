@@ -151,6 +151,10 @@ input[type="submit"],
 	/*border-radius: 0;*/
 }
 
+.section-full {
+  height: 100vh;
+}
+
 @keyframes fly-in-from-left {
   from {
     transform: translateY(15rem) rotate(15deg);
