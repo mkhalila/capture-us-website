@@ -76,15 +76,6 @@
   <section class="container card-margin">
     <div class="card">
       <h1 class="card-title">The Magic Mirror</h1>
-      <div class="owl-carousel owl-theme">
-        <div>Your Content 1</div>
-        <div>Your Content 2</div>
-        <div>Your Content 3</div>
-        <div>Your Content 4</div>
-        <div>Your Content 5</div>
-        <div>Your Content 6</div>
-        <div>Your Content 7</div>
-      </div>
     </div>
   </section>
 
@@ -97,6 +88,21 @@
   <section class="container card-margin">
     <div class="card">
       <h1 class="card-title">Got any questions?</h1>
+      <div class="owl-carousel owl-theme">
+        <div class="card">
+          <h4 class="card-title">Is there a cost for delivery?</h4>
+          <p class="faq-answer">We provide a FREE delivery within a return trip of 30 miles from East London. Over the 50 miles there may be a small charge applied. If you are outside the 30 miles please contact us and we can let you know how much the charge will be.</p>
+        </div>
+        <div class="card">
+          <h4 class="card-title">Can I get a refund for the time the booth is not being used?</h4>
+          <p class="faq-answer">No refund will be given if guests choose not to use all of the time rented from. For example, if your rental is from 1pm-4pm yet the party ends early at 3pm and you instruct our attendant to leave early, you will not be eligible for a refund of the 1 hour that did not get used.</p>
+        </div>
+        <div>Your Content 3</div>
+        <div>Your Content 4</div>
+        <div>Your Content 5</div>
+        <div>Your Content 6</div>
+        <div>Your Content 7</div>
+      </div>
     </div>
   </section>
 
@@ -142,11 +148,24 @@
   </script>
   <!-- Owl Carousel -->
   <script src="js/owl.carousel.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.owl-carousel').owlCarousel();
-    });
-  </script>
+  <script>
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+    </script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
