@@ -223,6 +223,15 @@ blockquote::after {
   content: "";
 }
 
+.carousel-force-height {
+	overflow: hidden;
+}
+
+.card-force-height {
+	padding-bottom: 100%; 
+	margin-bottom: -100%;
+}
+
 @media (max-width: 1200px) {
   #photos {
   -moz-column-count:    4;
