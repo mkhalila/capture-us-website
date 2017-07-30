@@ -48,7 +48,6 @@ nav {
 }
 
 .green-jumbotron {
-	margin-bottom: 60px;
 	color: white;
 	background-image: url(../img/green-jumbotron.png);
 }
@@ -115,6 +114,10 @@ input[type="tel"]:focus,
 	color: black;
 	border-color: rgba(223, 181, 43, 0.7);
 	background-color: rgba(223, 181, 43, 0.7);
+}
+
+.btn-span {
+	margin: 7px 7px;
 }
 
 .card-margin {
