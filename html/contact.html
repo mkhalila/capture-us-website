@@ -70,12 +70,14 @@
 
   <div class="container">
     <span>
-      <button class="btn btn-span">Make Enquiry</button>
-      <button class="btn btn-span">Get a Quote</button>
+      <button id="switch-enquiry" class="btn btn-span" onclick="switchToEnquiryForm()">Make Enquiry</button>
+      <button id="switch-quote" class="btn btn-span" onclick="switchToQuoteForm()">Get a Quote</button>
     </span>
   </div>
 
-  <section class="container">
+  <br>
+
+  <section id="contact-enquiry" class="container">
     <div class="card">
       <h1 class="card-title">General Enquiry</h1>
 
@@ -104,14 +106,13 @@
     </div>
   </section>
 
-  <section class="container">
+  <section id="contact-quote" class="container">
     <div class="card">
       <h1 class="card-title">Get a Quote</h1>
 
       <div class="card contact-success">
         <p class="gold-bright">Success. Your enquiry has been sent to us and we will get back to you as soon as we can.</p>
       </div>
-      
       <form method="POST" action="https://script.google.com/macros/s/AKfycby8r1lAbNKgaPXX3aBdNNuadf6QSzL0BVh6ioWud-fDP2Cap3HM/exec">
         <div class="form-group">
           <input type="text" class="form-control" name="name" placeholder="Name" required>
@@ -170,6 +171,25 @@
   <!-- Cookie Consent -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
   <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <script type="text/javascript">
+    function switchToEnquiryForm() {
+      document.getElementById("switch-enquiry").style.backgroundColor = "rgba(223, 181, 43, 0.7)";
+      document.getElementById("switch-enquiry").style.color = "black";
+      document.getElementById("switch-quote").style.backgroundColor = "black";
+      document.getElementById("switch-quote").style.color = "rgba(223, 181, 43, 0.7)";
+      document.getElementById("contact-quote").style.display = "none";
+      document.getElementById("contact-enquiry").style.display = "";
+    }
+
+    function switchToQuoteForm() {
+      document.getElementById("switch-quote").style.backgroundColor = "rgba(223, 181, 43, 0.7)";
+      document.getElementById("switch-quote").style.color = "black";
+      document.getElementById("switch-enquiry").style.backgroundColor = "black";
+      document.getElementById("switch-enquiry").style.color = "rgba(223, 181, 43, 0.7)";
+      document.getElementById("contact-enquiry").style.display = "none";
+      document.getElementById("contact-quote").style.display = "";
+    }
+  </script>
   <script src="../js/scripts.js"></script>
 </body>
 </html>
