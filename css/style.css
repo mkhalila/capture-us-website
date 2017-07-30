@@ -241,6 +241,94 @@ blockquote::after {
 	margin-bottom: -100%;
 }
 
+.picker__input {
+	color: rgba(255, 255, 255, 1) !important;
+	border: 1px solid rgba(223, 181, 43, 0.4);
+	background-color: black;
+  width: 100%;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-radius: .25rem;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+.picker__box {
+	background: black;
+}
+
+.picker {
+	color: rgba(223, 181, 43, 0.7);
+}
+
+.picker--focused .picker__day--highlighted,
+.picker__day--highlighted:hover,
+.picker__day--infocus:hover, 
+.picker__day--outfocus:hover {
+	background: rgba(223, 181, 43, 0.4);
+}
+
+.picker__day--today:before,
+.picker__button--today:before {
+	border-top-color: rgba(223, 181, 43, 0.7);
+}
+
+.picker__weekday,
+.picker__year {
+	color: white;
+}
+
+.picker--focused .picker__day--selected,
+.picker__day--selected,
+.picker__day--selected:hover {
+	background: rgba(223, 181, 43, 0.7);
+	color: black;
+}
+
+.picker__button--clear, .picker__button--close, .picker__button--today {
+	background: black;
+	border: 1px solid black;
+	color: white;
+	font-weight: 300;
+}
+
+.picker__button--close:before {
+	color: rgba(223, 181, 43, 0.7);
+}
+
+.picker__button--clear:before {
+	border-top-color: rgba(223, 181, 43, 0.7);
+}
+
+.picker__nav--next:before, 
+.picker__nav--prev:before, 
+.picker__nav--next:before {
+	border-right-color: rgba(223, 181, 43, 0.7);
+}
+
+.picker__nav--next:before {
+	border-left-color: rgba(223, 181, 43, 0.7);
+}
+
+.picker__nav--next:hover, 
+.picker__nav--prev:hover {
+	background: black;
+}
+
+.picker__button--clear:hover, .picker__button--close:hover, .picker__button--today:hover {
+    cursor: pointer;
+    color: rgba(223, 181, 43, 0.7);
+    background: black;
+    border-bottom-color: black; 
+}
+
 @media (max-width: 1200px) {
   #photos {
   -moz-column-count:    4;
@@ -261,4 +349,10 @@ blockquote::after {
   -webkit-column-count: 2;
   column-count:         2;
   }
+}
+
+@media (min-height: 33.875em) {
+	.picker__box {
+		border: 1px solid rgba(223, 181, 43, 0.7);
+	}	
 }
