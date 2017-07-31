@@ -23,6 +23,8 @@
   <link rel="stylesheet" type="text/css" href="../css/default.css">
   <link rel="stylesheet" type="text/css" href="../css/default.date.css">
   <link rel="stylesheet" type="text/css" href="../css/default.time.css">
+  <link rel="stylesheet" type="text/css" href="../css/selectize.css">
+  <link rel="stylesheet" type="text/css" href="../css/selectize.bootstrap3.css">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
@@ -127,7 +129,7 @@
           <input type="tel" class="form-control" pattern="(0|\+44)\d{10}" name="phone" placeholder="Contact Number" required title="0xxxxxxxxxx or +44xxxxxxxxxx"> 
         </div>
         <div class="form-group">
-          <select class="form-control" name="event-type">
+          <select class="form-control selectize" name="event-type">
             <option disabled selected>Event Type</option>
             <option>Wedding</option>
             <option>Birthday Party</option>
@@ -145,7 +147,7 @@
           <input type="date" id="date-picker" class="" name="event-date" placeholder="Event Date">
         </div>
         <div class="form-group">
-          <select class="form-control" name="hours">
+          <select class="form-control selectize" name="hours">
             <option disabled selected>Hours for Hire</option>
             <option>2</option>
             <option>3</option>
@@ -177,6 +179,7 @@
   <script src="../js/picker.js"></script>
   <script src="../js/picker.date.js"></script>
   <script src="../js/picker.time.js"></script>
+  <script src="../js/selectize.min.js"></script>
   <script type="text/javascript">
     function switchToEnquiryForm() {
       var switchEnquiry = document.getElementById("switch-enquiry");
@@ -218,6 +221,12 @@
 
     $("#date-picker").pickadate();
     $("#time-picker").pickatime();
+
+    $('.selectize').selectize({
+      create: true,
+      sortField: 'text'
+    });
+
   </script>
   <script src="../js/scripts.js"></script>
 </body>

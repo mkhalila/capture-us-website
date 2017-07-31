@@ -87,6 +87,7 @@ nav {
 	color: rgba(255, 255, 255, 0.8) !important;
 	border-color: rgba(223, 181, 43, 0.4);
 	background-color: black;
+	font-family: 'Quicksand', sans-serif;
 }
 
 textarea:focus,
@@ -251,6 +252,7 @@ blockquote::after {
 	background-color: black;
   width: 100%;
   padding: .5rem .75rem;
+	font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   line-height: 1.25;
   background-image: none;
@@ -374,7 +376,6 @@ blockquote::after {
   border: 0;
   font-weight: 500;
   font-size: .8em;
-  text-align: center;
   color: rgba(223, 181, 43, 0.7);
 }
 
@@ -388,6 +389,21 @@ blockquote::after {
 
 .picker--time .picker__button--clear:focus:before, .picker--time .picker__button--clear:hover:before {
   border-color: black;
+}
+
+.selectize-input {
+	background: black !important;
+	color: rgba(255, 255, 255, 0.8);
+	border-color: rgba(223, 181, 43, 0.4);
+	text-align: left;
+}
+
+.selectize-input.focus {
+	border-color: rgba(223, 181, 43, 0.5);
+}
+
+.selectize-dropdown, .selectize-input, .selectize-input input {
+	background: black !important;
 }
 
 @media (max-width: 1200px) {
