@@ -329,6 +329,63 @@ blockquote::after {
     border-bottom-color: black; 
 }
 
+.picker--focused .picker__list-item--highlighted, .picker__list-item--highlighted:hover, .picker__list-item:hover {
+    background: rgba(223, 181, 43, 0.7);
+    cursor: pointer;
+    color: #000;
+}
+
+.picker__input.picker__input--active {
+	border-color: rgba(223, 181, 43, 0.7);
+}
+
+.form-control[readonly] {
+    background-color: black;
+    opacity: 1;
+}
+
+.picker__list-item {
+    border-bottom: 1px solid rgba(223, 181, 43, 0.7);
+    border-top: 1px solid rgba(223, 181, 43, 0.7);
+    margin-bottom: -1px;
+    position: relative;
+    background: black;
+}
+
+.picker__list-item--highlighted,
+.picker__list-item:hover {
+    border-color: rgba(223, 181, 43, 0.7);
+}
+
+.picker__list {
+	background: black;
+	padding: 0;
+}
+
+.picker--time .picker__button--clear {
+  display: block;
+  width: 100%;
+  padding: 1em 1.25em;
+  background: black;
+  border: 0;
+  font-weight: 500;
+  font-size: .8em;
+  text-align: center;
+  color: rgba(223, 181, 43, 0.7);
+}
+
+.picker__button--clear:hover {
+  background: rgba(223, 181, 43, 0.7) !important;
+  border-color: rgba(223, 181, 43, 0.7) !important;
+  cursor: pointer !important;
+  color: black !important;
+  outline: 0 !important;
+}
+
+.picker--time .picker__button--clear:focus:before, .picker--time .picker__button--clear:hover:before {
+  border-color: black;
+}
+
 @media (max-width: 1200px) {
   #photos {
   -moz-column-count:    4;
