@@ -21,7 +21,7 @@ body {
 }
 
 nav {
-	border-bottom: 1px outset rgba(223, 181, 43, 0.6);
+	border-bottom: 1px solid rgba(223, 181, 43, 0.4);
 }
 
 .toggler-gold .navbar-toggler-icon {
@@ -202,7 +202,7 @@ blockquote {
   display:block;
   background: black;
   padding: 15px 20px 15px 45px;
-  margin: 0 0 20px;
+  margin: 0;
   position: relative;
   opacity: 80%;
   
@@ -215,6 +215,7 @@ blockquote {
   /*Borders - (Optional)*/
   border-left: 15px solid #9C7F1E;
   border-right: 2px solid #9C7F1E;
+	border-bottom: 1px outset rgba(223, 181, 43, 0.6);
 }
 
 blockquote::before {
@@ -229,7 +230,7 @@ blockquote::before {
   /*Positioning*/
   position: absolute;
   left: 10px;
-  top:5px;
+  top:0px;
 }
 
 blockquote::after {
