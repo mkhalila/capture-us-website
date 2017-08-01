@@ -23,6 +23,9 @@
   <!-- Owl Carousel -->
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <!-- Photoswipe Gallery -->
+  <link rel="stylesheet" href="css/photoswipe.css">
+  <link rel="stylesheet" href="css/default-skin/default-skin.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -68,6 +71,7 @@
       <h5>Magic Selfie Mirror Hire</h5>
       <!-- <br> -->
       <img class="img-fluid rounded" src="img/main-rounded.png">
+
       <h5>Capturing moments from today. Creating memories for a lifetime</h5>
     </div>
   </section>
@@ -97,6 +101,15 @@
   <section class="container card-margin">
     <div class="card">
       <h1 class="card-title">Gallery</h1>
+      <br>
+      <div id="gallery">
+        <div class="owl-carousel owl-theme carousel-force-height">
+          <img class="rounded" src="img/gallery/22.jpg" height="300px" alt=""/>
+          <img class="rounded" src="img/gallery/21.jpg" height="300px" alt=""/>
+          <img class="rounded" src="img/gallery/4.jpg" height="300px" alt=""/>
+          <img class="rounded" src="img/gallery/23.jpg" height="300px" alt=""/>
+        </div>
+      </div>
       <br>
       <div><a class="btn" href="html/gallery.html">See Gallery</a></div>
     </div>
@@ -196,7 +209,11 @@
           }
         }
       })
-    </script>
+  </script>
+  <script src="js/jquery.photoswipe-global.js"></script>
+  <script type="text/javascript">
+    $("#gallery").photoSwipe();
+  </script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
