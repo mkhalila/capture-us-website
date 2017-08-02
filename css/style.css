@@ -47,10 +47,6 @@ nav {
     color: rgba(223, 181, 43, 1);
 }
 
-.jumbotron-heading {
-	padding-bottom: 15px;
-}
-
 .green-jumbotron {
 	color: white;
 	background-image: url(../img/green-jumbotron.png);
@@ -113,6 +109,7 @@ input[type="tel"]:focus,
 	border-color: rgba(223, 181, 43, 0.7);
 	background-color: black;
 	margin-bottom: 20px;
+	font-size: 1.22rem;
 }
 
 .btn:hover {
@@ -434,3 +431,36 @@ blockquote::after {
 		border: 1px solid rgba(223, 181, 43, 0.7);
 	}	
 }
+
+@media (min-width: 321px) {
+	.jumbotron-heading {
+		padding-bottom: 15px;
+		font-size: 3.5rem;
+	}
+}
+
+@media (min-width: 576px) {
+	.jumbotron-heading {
+		padding-bottom: 15px;
+		font-size: 5rem;
+	}
+}
+
+@media (min-width: 300px) {
+	body {
+		font-size: 1.1rem;
+	}
+}
+
+@media (min-width: 600px) {
+	body {
+		font-size: 1.2rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	body {
+		font-size: 1.3rem;
+	}
+}
+
