@@ -7,13 +7,13 @@ body {
 }
 
 .nav-item {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
 }
 
 .nav-link {
 	color: white !important;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 .active .nav-link {
@@ -35,7 +35,7 @@ nav {
 .social-icon {
 	padding-left: 0.3em;
 	padding-right: 0.3em;
-	font-size: 2em;
+	font-size: 1.75em;
 	color: rgba(223, 181, 43, 0.7);
 }
 
@@ -402,6 +402,10 @@ blockquote::after {
 
 .selectize-dropdown, .selectize-input, .selectize-input input {
 	background: black !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: rgba(223, 181, 43, 0.7);
 }
 
 @media (max-width: 1200px) {
