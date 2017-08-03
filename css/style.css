@@ -50,6 +50,7 @@ nav {
 .green-jumbotron {
 	color: white;
 	background-image: url(../img/green-jumbotron.png);
+	border-bottom: 1px solid rgba(223, 181, 43, 0.4);
 }
 
 .card {
