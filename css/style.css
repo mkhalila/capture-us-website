@@ -466,3 +466,8 @@ blockquote::after {
 	}
 }
 
+@media (min-width: 992px) {
+	.invisible-card {
+		visibility: hidden;
+	}
+}
