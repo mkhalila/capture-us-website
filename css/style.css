@@ -116,6 +116,7 @@ input[type="tel"]:focus,
 	color: black;
 	border-color: rgba(223, 181, 43, 0.7);
 	background-color: rgba(223, 181, 43, 0.7);
+	cursor: pointer;
 }
 
 .btn-inverted {
