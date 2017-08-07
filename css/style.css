@@ -13,7 +13,7 @@ body {
 
 .nav-link {
 	color: white !important;
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 .nav-link:hover {
@@ -118,7 +118,7 @@ input[type="tel"]:focus,
 	border-color: rgba(223, 181, 43, 0.7);
 	background-color: black;
 	margin-bottom: 20px;
-	font-size: 1.22rem;
+	font-size: 1.11rem;
 }
 
 .btn:hover {
@@ -501,19 +501,19 @@ blockquote::after {
 
 @media (min-width: 300px) {
 	body {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 }
 
 @media (min-width: 600px) {
 	body {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 }
 
 @media (min-width: 1000px) {
 	body {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 }
 
