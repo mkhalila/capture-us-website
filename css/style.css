@@ -421,7 +421,7 @@ blockquote::after {
   box-sizing: border-box;
   width: 100%;
   text-align: center;
-  padding: 45px;
+  padding: 45px 45px 15px 45px;
   margin-top: 80px;
 }
 
