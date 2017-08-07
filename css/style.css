@@ -24,6 +24,10 @@ body {
 	color:  rgba(223, 181, 43, 0.8) !important;
 }
 
+.link {
+  color: rgba(223, 181, 43, 0.7) !important;
+}
+
 nav {
 	border-bottom: 1px solid rgba(223, 181, 43, 0.4);
 }
@@ -408,6 +412,49 @@ blockquote::after {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: rgba(223, 181, 43, 0.7);
+}
+
+.footer-basic-centered {
+  background-color: black;
+  box-shadow: 0 1px 1px 0 rgba(223, 181, 43, 0.7);
+  border-top: 1px solid rgba(223, 181, 43, 0.4);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 45px;
+  margin-top: 80px;
+}
+
+.footer-basic-centered .footer-company-motto {
+  color:  rgba(223, 181, 43, 0.7);
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.footer-basic-centered .footer-company-name {
+  color:  white;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+
+  .footer-basic-centered {
+    padding: 35px;
+  }
+
+  .footer-basic-centered .footer-company-motto {
+    font-size: 18px;
+  }
+
+  .footer-basic-centered .footer-company-name {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-height:800px){
+  footer { position: static; }
 }
 
 @media (max-width: 1200px) {
