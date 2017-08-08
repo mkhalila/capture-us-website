@@ -47,6 +47,12 @@ nav {
 	color: rgba(223, 181, 43, 0.7);
 }
 
+.social-icon-lg {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-size: 2em;
+}
+
 .social-icon:visited {
     color: rgba(223, 181, 43, 0.7);
 }
