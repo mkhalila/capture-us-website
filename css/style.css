@@ -410,6 +410,14 @@ blockquote::after {
 	background: black !important;
 }
 
+.selectize-dropdown-content {
+  border: 1px solid rgba(223, 181, 43, 0.7);
+}
+
+.selectize-dropdown [data-selectable]:hover {
+    background: rgba(223, 181, 43, 0.7);
+}
+
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: rgba(223, 181, 43, 0.7);
 }
