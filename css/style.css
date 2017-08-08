@@ -451,6 +451,12 @@ blockquote::after {
   padding-bottom: 30px;
 }
 
+@media (max-width: 440px) {
+  .green-jumbotron {
+    background-image: url(../img/green-jumbotron-sm.png);
+  }
+}
+
 @media (max-width: 600px) {
 
   .footer-basic-centered {
