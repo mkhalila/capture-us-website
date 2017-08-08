@@ -195,72 +195,9 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- Cookie Consent -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-  <script type="text/javascript">
-    window.addEventListener("load", function(){
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": {
-            "background": "#000",
-            "text": "#9c7f1e"
-          },
-          "button": {
-            "background": "#9c7f1e",
-            "text": "#050505"
-          }
-        },
-        "position": "bottom-left",
-        "theme": "classic",
-        "content": {
-          "dismiss": "Agree"
-        }
-      })
-    });
-  </script>
   <!-- Owl Carousel -->
   <script src="js/owl.carousel.min.js"></script>
-  <script>
-      var owl = $('.owl-carousel');
-      owl.owlCarousel({
-        margin: 20,
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 2
-          },
-          1000: {
-            items: 3
-          }
-        }
-      })
-  </script>
   <script src="js/jquery.photoswipe-global.js"></script>
-  <script type="text/javascript">
-    $(".gallery").photoSwipe();
-
-    // Quote automation
-    var quotes = [
-      "Quote 1",
-      "Quote 2",
-      "Quote 3",
-      "Quote 4",
-      "Quote 5",
-      "Quote 6",
-      "Quote 7",
-      "Quote 8",
-      "Quote 9",
-      "Quote 10",
-      "Quote 11",
-      "Quote 12"
-    ];
-
-    randNumber = Math.random() * (quotes.length - 1);
-    randIndex = Math.round(randNumber);
-    randQuote = quotes[randIndex];
-
-    document.getElementById("auto-quote").innerHTML = randQuote;
-  </script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
