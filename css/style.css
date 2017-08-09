@@ -421,7 +421,7 @@ blockquote::after {
 }
 
 .selectize-dropdown [data-selectable] {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .selectize-dropdown [data-selectable]:hover {

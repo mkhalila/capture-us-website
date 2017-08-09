@@ -18,7 +18,7 @@ switch (currentPage) {
 	case "contact.html":
 		$("#date-picker").pickadate();
     $("#time-picker").pickatime();
-    $('.selectize').selectize();
+    initSelectize();
 		break;
 }	
 
@@ -111,4 +111,18 @@ function switchToQuoteForm() {
 
   if(gForm) gForm.id = "enquiry-form";
   document.getElementById("quote-form").id = "gform";
+}
+
+function initSelectize() {
+	var prevSetup = Selectize.prototype.setup;
+	
+	Selectize.prototype.setup = function () {
+    prevSetup.call(this);
+
+    // This property is set in native setup
+    // Unless the source code changes, it should
+    // work with any version
+    this.$control_input.prop('readonly', true);
+	};
+  $('.selectize').selectize();
 }
