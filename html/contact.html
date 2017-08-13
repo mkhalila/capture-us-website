@@ -191,6 +191,62 @@
   <script src="../js/picker.date.js"></script>
   <script src="../js/picker.time.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.min.js"></script>
+
+  <script type="text/javascript">
+    function switchToEnquiryForm() {
+      var switchEnquiry = document.getElementById("switch-enquiry");
+      var switchQuote = document.getElementById("switch-quote");
+      var enquiryForm = document.getElementById("enquiry-form");
+
+      switchEnquiry.disabled = true;
+      switchQuote.disabled = false;
+
+      switchEnquiry.style.backgroundColor = "rgba(223, 181, 43, 0.7)";
+      switchEnquiry.style.color = "black";
+      switchQuote.style.backgroundColor = "black";
+      switchQuote.style.color = "rgba(223, 181, 43, 0.7)";
+      document.getElementById("contact-quote").style.display = "none";
+      document.getElementById("contact-enquiry").style.display = "";
+
+      document.getElementById("gform").id = "quote-form";
+      if(enquiryForm) enquiryForm.id = "gform";
+    }
+
+    function switchToQuoteForm() {
+      var switchEnquiry = document.getElementById("switch-enquiry");
+      var switchQuote = document.getElementById("switch-quote");
+      var gForm = document.getElementById("gform");
+
+      switchQuote.disabled = true;
+      switchEnquiry.disabled = false;
+
+      switchQuote.style.backgroundColor = "rgba(223, 181, 43, 0.7)";
+      switchQuote.style.color = "black";
+      switchEnquiry.style.backgroundColor = "black";
+      switchEnquiry.style.color = "rgba(223, 181, 43, 0.7)";
+      document.getElementById("contact-enquiry").style.display = "none";
+      document.getElementById("contact-quote").style.display = "";
+
+      if(gForm) gForm.id = "enquiry-form";
+      document.getElementById("quote-form").id = "gform";
+    }
+    
+    function initSelectize() {
+      var prevSetup = Selectize.prototype.setup;
+      
+      Selectize.prototype.setup = function () {
+        prevSetup.call(this);
+        this.$control_input.prop('readonly', true);
+      };
+
+      $('.selectize').selectize();
+    }
+
+    $("#date-picker").pickadate();
+    $("#time-picker").pickatime();
+    initSelectize();
+  </script>
+
   <script src="../js/scripts.js"></script>
 </body>
 </html>

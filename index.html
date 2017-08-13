@@ -199,6 +199,67 @@
   <!-- Owl Carousel -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
   <script src="js/jquery.photoswipe-global.js"></script>
+  
+  <script type="text/javascript">
+    function initCookieConsent() {
+      window.addEventListener("load", function() {
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#000",
+              "text": "#9c7f1e"
+            },
+            "button": {
+              "background": "#9c7f1e",
+              "text": "#050505"
+            }
+          },
+          "position": "bottom-left",
+          "theme": "classic",
+          "content": {
+            "dismiss": "Agree"
+          }
+        })
+      });
+    }
+
+    function initCarousel() {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        margin: 20,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    }
+
+    function quoteAutomation() {
+      // Quote automation
+      var quotes = [
+        "Amazing setup, u guys delivered. Honestly love you guys"
+      ];
+
+      randNumber = Math.random() * (quotes.length - 1);
+      randIndex = Math.round(randNumber);
+      randQuote = quotes[randIndex];
+
+      document.getElementById("auto-quote").innerHTML = randQuote;
+    }
+
+    initCookieConsent();
+    initCarousel();
+    quoteAutomation();
+    $(".gallery").photoSwipe();
+  </script>
+
   <script src="js/scripts.js"></script>
 </body>
 </html>
