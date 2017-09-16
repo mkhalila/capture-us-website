@@ -92,11 +92,11 @@
     <div class="card card-margin">
       <h1 class="card-title">General Enquiry</h1>
       <br>
-      <div id="thankyou_message" class="card contact-success">
+      <div id="enquiry-success" class="card contact-success">
         <p class="gold-bright">Success! Your enquiry has been sent to us and we will get back to you as soon as we can.</p>
       </div>
 
-      <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwdsP582XUW2ywdATtLINyB0avCgyuSwHq8bsSZ0xp8L6JVxV-H/exec">
+      <form id="enquiry-form" method="POST" action="https://script.google.com/macros/s/AKfycbwdsP582XUW2ywdATtLINyB0avCgyuSwHq8bsSZ0xp8L6JVxV-H/exec">
         <div class="form-group">
           <input type="text" class="form-control" name="name" placeholder="Name" required>
         </div>
@@ -121,7 +121,7 @@
     <div class="card card-margin">
       <h1 class="card-title">Get a Quote</h1>
       <br>
-      <div class="card contact-success">
+      <div id="quote-success" class="card contact-success">
         <p class="gold-bright">Success. Your enquiry has been sent to us and we will get back to you as soon as we can.</p>
       </div>
       <form id="quote-form" method="POST" action="https://script.google.com/macros/s/AKfycbyq8xRUNMTrzK0e-mNJcfMD2-eRHIwXSPhsAfWzleoQ6NCB7vBn/exec">
@@ -185,7 +185,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <!-- Cookie Consent -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-  <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
   <script src="../js/picker.js"></script>
   <script src="../js/picker.date.js"></script>
   <script src="../js/picker.time.js"></script>
@@ -206,9 +206,6 @@
       switchQuote.style.color = "rgba(223, 181, 43, 0.7)";
       document.getElementById("contact-quote").style.display = "none";
       document.getElementById("contact-enquiry").style.display = "";
-
-      document.getElementById("gform").id = "quote-form";
-      if(enquiryForm) enquiryForm.id = "gform";
     }
 
     function switchToQuoteForm() {
@@ -225,9 +222,6 @@
       switchEnquiry.style.color = "rgba(223, 181, 43, 0.7)";
       document.getElementById("contact-enquiry").style.display = "none";
       document.getElementById("contact-quote").style.display = "";
-
-      if(gForm) gForm.id = "enquiry-form";
-      document.getElementById("quote-form").id = "gform";
     }
     
     function initSelectize() {
@@ -246,6 +240,7 @@
     initSelectize();
   </script>
 
+  <script src="../js/email-send.js"></script>
   <script src="../js/scripts.js"></script>
 </body>
 </html>
