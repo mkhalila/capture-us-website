@@ -541,6 +541,12 @@ blockquote::after {
 	}
 }
 
+@media (max-width: 991px) {
+  .invisible-card {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
 	.invisible-card {
 		visibility: hidden;
